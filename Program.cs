@@ -79,7 +79,8 @@ namespace NinetiesTV
         // 6. Return the average IMDB rating for all the shows.
         static double AverageRating(List<Show> shows)
         {
-            throw new NotImplementedException();
+            double AvgRating = shows.Average(shows => shows.ImdbRating);
+            return AvgRating;
         }
 
         // 7. Return the shows that started and ended in the 90s.
